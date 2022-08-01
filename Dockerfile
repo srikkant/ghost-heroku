@@ -1,4 +1,4 @@
-FROM ghost:xalpine
+FROM ghost:alpine
 
 COPY heroku-entrypoint.sh /usr/local/bin
 
