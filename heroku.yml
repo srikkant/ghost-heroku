@@ -3,7 +3,7 @@ setup:
         - plan: cleardb:ignite
           as: CLEARDB_DATABASE
     config:
-        DB_URL_NAME: CLEARDB_DATABASE_URL
+        DB_URL_NAME: JAWSDB_URL
 build:
     docker:
         web: Dockerfile

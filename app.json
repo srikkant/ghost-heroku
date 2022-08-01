@@ -11,11 +11,11 @@
     "addons": [
         {
             "plan": "jawsdb:kitefin",
-            "as": "JAWSDB_URL"
+            "as": "JAWSDB"
         }
     ],
     "env": {
-        "DB_URL": {
+        "DB_URL_ALIAS": {
             "description": "An alias for your db url environment variable",
             "value": "JAWSDB_URL"
         },

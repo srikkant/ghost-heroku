@@ -13,7 +13,7 @@ console.log(`database__connection__password=${url.password}`);
 console.log(`database__connection__user=${url.username}`);
 EOF
 
-export $(node -e "var arg = '$(printenv $DB_URL)';$js_script" | xargs)
+export $(node -e "var arg = '$(printenv $DB_URL_ALIAS)';$js_script" | xargs)
 export server__host='0.0.0.0'
 export server__port=$PORT
 
