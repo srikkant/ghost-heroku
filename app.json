@@ -10,14 +10,14 @@
     "success_url": "/",
     "addons": [
         {
-            "plan": "cleardb:ignite",
-            "as": "CLEARDB_DATABASE"
+            "plan": "jawsdb:kitefin",
+            "as": "JAWSDB_URL"
         }
     ],
     "env": {
         "DB_URL": {
             "description": "An alias for your db url environment variable",
-            "value": "CLEARDB_DATABASE_URL"
+            "value": "JAWSDB_URL"
         },
         "url": {
             "description": "URL of your blog",
