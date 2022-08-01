@@ -1,0 +1,27 @@
+{
+    "name": "Ghost",
+    "description": "Ghost blogging platform",
+    "repository": "https://github.com/srikkant/ghost-heroku",
+    "keywords": [
+        "ghost",
+        "blog"
+    ],
+    "stack": "container",
+    "success_url": "/",
+    "addons": [
+        {
+            "plan": "cleardb:ignite",
+            "as": "CLEARDB_DATABASE"
+        }
+    ],
+    "env": {
+        "DB_URL": {
+            "description": "An alias for your db url environment variable",
+            "value": "CLEARDB_DATABASE_URL"
+        },
+        "url": {
+            "description": "URL of your blog",
+            "required": true
+        }
+    }
+}

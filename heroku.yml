@@ -1,0 +1,9 @@
+setup:
+    addons:
+        - plan: cleardb:ignite
+          as: CLEARDB_DATABASE
+    config:
+        DB_URL_NAME: CLEARDB_DATABASE_URL
+build:
+    docker:
+        web: Dockerfile
